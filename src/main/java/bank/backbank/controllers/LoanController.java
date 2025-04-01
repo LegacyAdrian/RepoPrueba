@@ -13,7 +13,7 @@ import java.util.List;
 @RequestMapping("/bank/")
 @CrossOrigin(origins = "http://localhost:5173")
 public class LoanController {
-
+    //Aqui el Service
     LoanService loanService;
 
     @Autowired
