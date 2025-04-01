@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="550.0" prefWidth="830.0" style="-fx-background-image: url('file:src/main/resources/c/practica_final_interfaz/Imagenes/abstract-black-background-free-vector.jpg'); -fx-background-size: cover;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="c.practica_final_interfaz.MainView">
+    <children>
+        <Label layoutX="297.0" layoutY="25.0" text="Tienda Chula" textFill="#4CAF50">
+            <font>
+                <Font name="System Bold Italic" size="36.0" />
+            </font>
+        </Label>
+        <Button layoutX="350.0" layoutY="482.0" mnemonicParsing="false" onMouseClicked="#Salir" prefHeight="35.0" prefWidth="100.0" style="-fx-background-color: #f44336; -fx-text-fill: white; -fx-font-size: 16px; -fx-border-radius: 5;" text="Salir" />
+      <Pane layoutX="254.0" layoutY="99.0" prefHeight="369.0" prefWidth="295.0" style="-fx-border-color: #333333; -fx-background-color: FFFFFF;">
+         <children>
+      
+              <Label layoutX="82.0" layoutY="20.0" text="Nombre Usuario" textFill="#333333">
+                  <font>
+                      <Font size="18.0" />
+                  </font>
+              </Label>
+      
+              <TextField fx:id="User" layoutX="46.0" layoutY="59.0" prefWidth="204.0" promptText="Introduce tu nombre" style="-fx-border-radius: 5; -fx-border-color: #4CAF50; -fx-background-color: white;" />
+      
+              <Label layoutX="86.0" layoutY="105.0" text="Contraseña" textFill="#333333">
+                  <font>
+                      <Font size="18.0" />
+                  </font>
+              </Label>
+      
+              <PasswordField fx:id="Password" layoutX="46.0" layoutY="142.0" prefWidth="204.0" promptText="Introduce la Contraseña" style="-fx-border-radius: 5; -fx-border-color: #4CAF50; -fx-background-color: white;" />
+      
+              <Label layoutX="55.0" layoutY="200.0" text="Clave de Administrador" textFill="#333333">
+                  <font>
+                      <Font size="18.0" />
+                  </font>
+              </Label>
+      
+              <TextField fx:id="Adminkey" layoutX="46.0" layoutY="240.0" prefHeight="25.0" prefWidth="204.0" promptText="Introduce la clave" style="-fx-border-radius: 5; -fx-border-color: #4CAF50; -fx-background-color: white;" />
+      
+              <Button layoutX="24.0" layoutY="301.0" mnemonicParsing="false" onMouseClicked="#Registro" style="-fx-background-color: #4CAF50; -fx-text-fill: white; -fx-font-size: 16px; -fx-border-radius: 5;" text="Registrarse" />
+              <Button layoutX="168.0" layoutY="301.0" mnemonicParsing="false" onMouseClicked="#IniciarSesion" style="-fx-background-color: #2196F3; -fx-text-fill: white; -fx-font-size: 16px; -fx-border-radius: 5;" text="Iniciar sesion" />
+         </children>
+      </Pane>
+    </children>
+</AnchorPane>
