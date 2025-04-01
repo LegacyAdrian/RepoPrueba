@@ -38,7 +38,7 @@ public class ComprarView {
     public static void recibirUsuario(Usuario u) {
         useractual = u;
     }
-
+//Oli sigue siendo el peor siempre lo sera
     private void cargarProductos() {
         ApiService productoservice = RetrofitProduct.getApiService();
         Call<List<Producto>> call = productoservice.obtenerProductos();
